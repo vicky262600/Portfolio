@@ -1,22 +1,21 @@
+import { ThemeProvider } from 'styled-components';
 import './App.css';
-import Home from "./componenets/Home/Home"
+// import Home from "./componenets/Home/Home"
 import {
   BrowserRouter as Router,
-  Routes,
-  Route
+//   Routes,
+//   Route
 } from "react-router-dom";
-import Header from './componenets/header/Header';
+// import Header from './componenets/header/Header';
+import darkTheme from "./utils/Themes";
+import Navbar from './componenets/Navbar';
 
 function App() {
-  return (
+  return <ThemeProvider theme={darkTheme}>
     <Router>
-        <Header/>
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        {/* <Route path='/' element={<Header/>} /> */}
-      </Routes>
+      <Navbar/>
     </Router>
-  );
+  </ThemeProvider>
 }
 
 export default App;
