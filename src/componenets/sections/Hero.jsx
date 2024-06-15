@@ -1,7 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Bio } from '../../data/constants'
-import Typewriter from "typewriter-effect"
+import Typewriter from 'typewriter-effect'
+import HeroBgAnimation from '../HeroBgAnimation'
+import {Tilt} from 'react-tilt'
+import {motion} from 'framer-motion'
+import {headContainerAnimation} from '../../utils/motion'
+import { headTextAnimation } from '../../utils/motion'
 
 const HeroContainer = styled.div`
  display: flex;
@@ -55,7 +60,10 @@ const HeroLeftContainer =styled.div`
 const HeroRightContainer = styled.div`
  width: 100%;
  order: 2;
- background-color: blue;
+ display: flex;
+ align-items: center;
+ justify-content: end;
+ 
 
  @media (max-width: 960px){
     order: 1;
@@ -125,25 +133,101 @@ const SubTitle = styled.div`
     line-height: 32px;
   }
 `
-const ResumeButton = styled.div`
-  height: 50px;
-  width: 150px;
-  border: 1px solid  ${({ theme }) => theme.primary};
-  color: ${({theme})=> theme.primary};
-  border-radius: 
+const ResumeButton = styled.a`
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
 
+  height: 50px;
+  width: 95%;
+  max-width: 300px;
+  border: 1px solid  ${({ theme }) => theme.primary};
+  background-color: ${({ theme }) => theme.primary};
+  color: ${({theme})=> theme.primary};
+  color: ${({theme})=> theme.text_primary};
+  border-radius: 50px;
+  padding: 16px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+    box-shadow:  20px 20px 60px #1F2634,
+    filter: brightness(1);
+    }
+
+  @media (max-width: 640px) {
+        padding: 12px 0;
+        font-size: 18px;
+    } 
+    color: white;
+`
+const ProfilePictureContianer = styled.div`
+  height: 375px;
+  width: 375px;
+  border-radius: 50%;
+  border: 2px solid ${({theme})=> theme.primary};
+  overflow: hidden;
+
+  @media (max-width: 640px) {
+        max-width: 290px;
+        max-height: 290px; 
+    } 
+` 
+
+const ProfilePicture = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+`
+const HeroBg = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 1360px;
+  overflow: hidden;
+  padding: 0 30px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+
+  @media (max-width: 960px) {
+    justify-content: center;
+    padding: 0 0px;
+  }
 `
 
 const hero = () => {
   return (
     <div id= "about" >
       <HeroContainer>
-        <HeroInnerContainer>
+        <HeroBg>
+          <HeroBgAnimation/>
+        </HeroBg>
+
+        <motion.div>
+          <HeroInnerContainer {...headContainerAnimation}>
           <HeroLeftContainer>
-            <Title>
-              Hi, I am <br/> {Bio.name}
-            </Title>
-            <TextLoop>
+            <motion.div  {...headTextAnimation}>
+              <Title>
+                Hi, I am <br/> {Bio.name}
+              </Title>
+              <TextLoop>
               I am a
               <Span>
                 <Typewriter
@@ -153,24 +237,25 @@ const hero = () => {
                     loop: true,
                   }}
                 />
-              </Span>
-            </TextLoop>
+                </Span>
+              </TextLoop>
+            </motion.div>
             <SubTitle>
               {Bio.description}
             </SubTitle>
             <ResumeButton>
-              Resume
+              Check Resume
             </ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>
-            Right
-            {/* <ProfilePicture>
+            <Tilt>
               <ProfilePictureContianer>
-              
+                <ProfilePicture src={"https://peach-advisory-zebra-318.mypinata.cloud/ipfs/Qmey2d3zy3yZ7cySkP81sN3h1H8sjzK6Ri7PNFvMyuvmgD"} alt="Vikas Joshi"/>
               </ProfilePictureContianer>
-            </ProfilePicture> */}
+            </Tilt>
           </HeroRightContainer>
-        </HeroInnerContainer>
+          </HeroInnerContainer>
+        </motion.div>
       </HeroContainer>
     </div>
   )
