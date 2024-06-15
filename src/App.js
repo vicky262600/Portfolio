@@ -1,4 +1,4 @@
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import './App.css';
 // import Home from "./componenets/Home/Home"
 import {
@@ -9,11 +9,23 @@ import {
 // import Header from './componenets/header/Header';
 import darkTheme from "./utils/Themes";
 import Navbar from './componenets/Navbar';
+import Hero from './componenets/sections/Hero';
+
+const Body = styled.div`
+  background-color: ${({ theme }) => theme.bg};
+  color: ${({ theme }) => theme.text_primary};
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+`;
 
 function App() {
   return <ThemeProvider theme={darkTheme}>
     <Router>
       <Navbar/>
+      <Body>
+        <Hero/>
+      </Body>
     </Router>
   </ThemeProvider>
 }
