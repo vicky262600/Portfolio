@@ -10,6 +10,9 @@ import {
 import darkTheme from "./utils/Themes";
 import Navbar from './componenets/Navbar';
 import Hero from './componenets/sections/Hero';
+import Skills from './componenets/sections/Skills';
+import Experience from './componenets/sections/Experience';
+import Practice from './componenets/sections/Practice';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -25,6 +28,9 @@ function App() {
       <Navbar/>
       <Body>
         <Hero/>
+        <Skills/>
+        <Experience/>
+        <Practice/>
       </Body>
     </Router>
   </ThemeProvider>
