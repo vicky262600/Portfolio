@@ -13,6 +13,7 @@ import Hero from './componenets/sections/Hero';
 import Skills from './componenets/sections/Skills';
 import Experience from './componenets/sections/Experience';
 import Practice from './componenets/sections/Practice';
+import Education from './componenets/sections/Education'
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -30,6 +31,7 @@ function App() {
         <Hero/>
         <Skills/>
         <Experience/>
+        <Education/>
         <Practice/>
       </Body>
     </Router>
