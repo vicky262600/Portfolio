@@ -57,6 +57,8 @@ const Education = () => {
         <Desc
           style={{
             marginBottom: "40px",
+            paddingLeft: "18px",
+            paddingRight: "18px",
           }}
         >
           My education has been a journey of self-discovery and growth. My

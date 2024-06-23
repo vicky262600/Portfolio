@@ -10,6 +10,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 50px;
     position: relative;
     z-index: 1;
     align-items: center;
@@ -53,7 +54,7 @@ const Desc = styled.div`
 
 const Experience = () => {
   return (
-    <Container id='Education'>
+    <Container id='Experience'>
         <Wrapper>
             <Title>
                 Experience
@@ -61,6 +62,8 @@ const Experience = () => {
             <Desc
                 style={{
                     marginBottom: "24px",
+                    paddingLeft: "18px",
+                    paddingRight: "18px",
                 }}
             >
                 My work experience as a Software Engineer in different companies and projects

@@ -215,7 +215,7 @@ const HeroBg = styled.div`
 
 const hero = () => {
   return (
-    <div id= "about" >
+    <div id= "About" >
       <HeroContainer>
         <HeroBg>
           <StarCanvas/>
@@ -245,7 +245,7 @@ const hero = () => {
             <SubTitle>
               {Bio.description}
             </SubTitle>
-            <ResumeButton>
+            <ResumeButton href={Bio.resume} target= '_blank'>
               Check Resume
             </ResumeButton>
           </HeroLeftContainer>
