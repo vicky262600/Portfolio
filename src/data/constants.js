@@ -301,7 +301,7 @@ export const projects = [
     category: "web app",
     github: "https://github.com/vicky262600/RIRA-Ecommerce-FE",
     githubBE: "https://github.com/vicky262600/RIRA-Ecommerce-API",
-    webapp: "https://redux-fe.vercel.app/",
+    webapp: "https://rira-ecommerce-fe.vercel.app/",
   },
 ];
 
