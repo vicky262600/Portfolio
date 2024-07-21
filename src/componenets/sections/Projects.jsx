@@ -96,7 +96,7 @@ const Projects = () => {
                 <Desc style={{marginBottom: "40px",
                     paddingLeft: "18px",
                     paddingRight: "18px",
-                }}>I have worked on web applications and data analysis.</Desc>
+                }}>I have worked on web applications and data analysis. Explore on your PC for the full experience— mobile responsiveness is just not my favorite part!</Desc>
 
                 <ToggleButtonGroup>
                     <ToggleButton active={toggle==="all"}
