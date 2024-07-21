@@ -9,7 +9,7 @@ export const Bio = {
     "I am a motivated and adaptable individual, always ready to embrace new challenges. With a passion for learning, I am committed to delivering top-quality results. My positive attitude and growth mindset equip me to make significant contributions and accomplish remarkable achievements.",
   github: "https://github.com/vicky262600",
   resume:
-    "https://drive.google.com/file/d/1bp45BPfJ97V2aHXfUjIFwdZ-am9vMJ4j/view",
+    "https://drive.google.com/file/d/1iNb5quiztqm8YlEYJdfsFSFBl30KjKfD/view",
   linkedin: "https://www.linkedin.com/in/vikas2604/",
 };
 
@@ -286,21 +286,22 @@ export const projects = [
     id: 1,
     title: "RIRA E-commerce",
     description:
-      "currently working on it.",
+      "I'm excited to announce the completion of my e-commerce project using React, Express, MongoDB, Node.js, Stripe for payment, JWT, Redux, and Persist. This project features user registration, product browsing, cart management, and secure payments, enhancing my full-stack development skills and user experience design.",
     image:
-      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+      "https://peach-advisory-zebra-318.mypinata.cloud/ipfs/QmbYdKeEckojk9whryWytr5TVCqyhcyonGnBe5dWGVjiRh",
     tags: [
       "React Js",
+      "Stripe",
       "MongoDb",
       "Node Js",
       "Express Js",
       "Redux",
       "Postman",
-      "Firebase"
     ],
     category: "web app",
     github: "https://github.com/vicky262600/RIRA-Ecommerce-FE",
     githubBE: "https://github.com/vicky262600/RIRA-Ecommerce-API",
+    webapp: "https://redux-fe.vercel.app/",
   },
 ];
 
