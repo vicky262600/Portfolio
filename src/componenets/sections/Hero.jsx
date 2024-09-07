@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import { Bio } from '../../data/constants'
 import Typewriter from 'typewriter-effect'
 import HeroBgAnimation from '../HeroBgAnimation'
-import {Tilt} from 'react-tilt'
-import {motion} from 'framer-motion'
-import {headContainerAnimation} from '../../utils/motion'
+import { Tilt } from 'react-tilt'
+import { motion } from 'framer-motion'
+import { headContainerAnimation } from '../../utils/motion'
 import { headTextAnimation } from '../../utils/motion'
 import StarCanvas from "../canvas/Stars";
 
@@ -38,7 +38,7 @@ const HeroInnerContainer = styled.div`
     flex-direction: column;
   }
 `
-const HeroLeftContainer =styled.div`
+const HeroLeftContainer = styled.div`
   width: 100%;
   order: 1;
   gap: 6px;
@@ -82,7 +82,7 @@ const HeroRightContainer = styled.div`
 const Title = styled.div`
   font-size: 50px;
   font-weight: 700;
-  color: ${({theme})=> theme.text_primary};
+  color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
 
   @media (max-width: 960px){
@@ -145,8 +145,8 @@ const ResumeButton = styled.a`
   max-width: 300px;
   border: 1px solid  ${({ theme }) => theme.primary};
   background-color: ${({ theme }) => theme.primary};
-  color: ${({theme})=> theme.primary};
-  color: ${({theme})=> theme.text_primary};
+  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.text_primary};
   border-radius: 50px;
   padding: 16px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -175,14 +175,14 @@ const ProfilePictureContianer = styled.div`
   height: 375px;
   width: 375px;
   border-radius: 50%;
-  border: 2px solid ${({theme})=> theme.primary};
+  border: 2px solid ${({ theme }) => theme.primary};
   overflow: hidden;
 
   @media (max-width: 640px) {
         max-width: 290px;
         max-height: 290px; 
     } 
-` 
+`
 
 const ProfilePicture = styled.img`
   width: 100%;
@@ -215,47 +215,46 @@ const HeroBg = styled.div`
 
 const hero = () => {
   return (
-    <div id= "About" >
+    <div id="About" >
       <HeroContainer>
         <HeroBg>
-          <StarCanvas/>
-          <HeroBgAnimation/>
+          <StarCanvas />
+          <HeroBgAnimation />
         </HeroBg>
 
         <motion.div>
           <HeroInnerContainer {...headContainerAnimation}>
-          <HeroLeftContainer>
-            <motion.div  {...headTextAnimation}>
-              <Title>
-                Hi, I am <br/> {Bio.name}
-              </Title>
-              <TextLoop>
-              I am a
-              <Span>
-                <Typewriter
-                  options={{
-                    strings: Bio.roles,
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-                </Span>
-              </TextLoop>
-            </motion.div>
-            <SubTitle>
-              {Bio.description}
-            </SubTitle>
-            <ResumeButton href={Bio.resume} target= '_blank'>
-              Check Resume
-            </ResumeButton>
-          </HeroLeftContainer>
-          <HeroRightContainer>
-            <Tilt>
-              <ProfilePictureContianer>
-                <ProfilePicture src={"https://peach-advisory-zebra-318.mypinata.cloud/ipfs/Qmey2d3zy3yZ7cySkP81sN3h1H8sjzK6Ri7PNFvMyuvmgD"} alt="Vikas Joshi"/>
-              </ProfilePictureContianer>
-            </Tilt>
-          </HeroRightContainer>
+            <HeroLeftContainer>
+              <motion.div  {...headTextAnimation}>
+                <Title>
+                  Hi, I am <br /> {Bio.name}
+                </Title>
+                <TextLoop>
+                  <Span>
+                    <Typewriter
+                      options={{
+                        strings: Bio.roles,
+                        autoStart: true,
+                        loop: true,
+                      }}
+                    />
+                  </Span>
+                </TextLoop>
+              </motion.div>
+              <SubTitle>
+                {Bio.description}
+              </SubTitle>
+              <ResumeButton href={Bio.resume} target='_blank'>
+                Check Resume
+              </ResumeButton>
+            </HeroLeftContainer>
+            <HeroRightContainer>
+              <Tilt>
+                <ProfilePictureContianer>
+                  <ProfilePicture src={"https://peach-advisory-zebra-318.mypinata.cloud/ipfs/Qmey2d3zy3yZ7cySkP81sN3h1H8sjzK6Ri7PNFvMyuvmgD"} alt="Vikas Joshi" />
+                </ProfilePictureContianer>
+              </Tilt>
+            </HeroRightContainer>
           </HeroInnerContainer>
         </motion.div>
       </HeroContainer>

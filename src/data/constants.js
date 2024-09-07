@@ -1,8 +1,8 @@
 export const Bio = {
   name: "Vikas Joshi",
   roles: [
-    "Full Stack Software and Blockchain Developer",
-    "UI/UX Designer",
+    "I am a Full Stack Software and Blockchain Developer,",
+    "UI/UX Designer and",
     "Programmer",
   ],
   description:
@@ -309,7 +309,7 @@ export const projects = [
     description:
       "I developed a secure Ethereum voting app with MetaMask integration, enabling real-time voting and smart contract interactions using ethers.js. Through this project, I advanced my skills in blockchain development, Solidity, and Web3 integration, applying them in a fully functional DApp on the Base Sepolia Testnet.",
     image:
-      "https://peach-advisory-zebra-318.mypinata.cloud/ipfs/QmbYdKeEckojk9whryWytr5TVCqyhcyonGnBe5dWGVjiRh",
+      "https://peach-advisory-zebra-318.mypinata.cloud/ipfs/QmTveVwxjuxfBbrsexnXAqhsF2ojCyhc7dAw1vz6A5eaGk",
     tags: [
       "Solidity",
       "Ethers.js",

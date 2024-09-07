@@ -109,7 +109,7 @@ const Projects = () => {
                     >Web App</ToggleButton>
                     <Divider />
                     <ToggleButton active={toggle === "Decentralized app"}
-                        onClick={() => setToggle("web app")}
+                        onClick={() => setToggle("Decentralized app")}
                     >Decentralized app</ToggleButton>
                     <Divider />
                     <ToggleButton active={toggle === "data analysis"}
