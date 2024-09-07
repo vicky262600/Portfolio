@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link as LinkR } from 'react-router-dom'
 import styled, { useTheme } from 'styled-components'
-import {Bio} from '../data/constants'
+import { Bio } from '../data/constants'
 import MenuIcon from '@mui/icons-material/Menu';
 
 const Nav = styled.div`
@@ -96,7 +96,7 @@ padding: 0 6px;
 `
 const GithubButton = styled.a`
  border: 1px solid  ${({ theme }) => theme.primary};
- color: ${({theme})=> theme.primary};
+ color: ${({ theme }) => theme.primary};
  display: flex;
  justify-content: center;
  align-items: center;
@@ -134,7 +134,7 @@ const Navbar = () => {
         <NavLogo to="/">
           Portfolio
         </NavLogo>
-        <MobileIcon onClick={() => setIsOpen(!isOpen)} ><MenuIcon style={{color:"inherit"}}/></MobileIcon>
+        <MobileIcon onClick={() => setIsOpen(!isOpen)} ><MenuIcon style={{ color: "inherit" }} /></MobileIcon>
 
         <NavItem>
           <NavLink href="#About">About</NavLink>
@@ -145,11 +145,11 @@ const Navbar = () => {
         </NavItem>
 
         {isOpen && <MobileMenu isOpen={isOpen}>
-          <NavLink onClick={()=> setIsOpen(!isOpen)} href="#About">About</NavLink>
-          <NavLink onClick={()=> setIsOpen(!isOpen)} href="#Skills">Skills</NavLink>
-          <NavLink onClick={()=> setIsOpen(!isOpen)} href="#Experience">Experience</NavLink>
-          <NavLink onClick={()=> setIsOpen(!isOpen)} href="#projects">Projects</NavLink>
-          <NavLink onClick={()=> setIsOpen(!isOpen)} href="#Education">Education</NavLink>
+          <NavLink onClick={() => setIsOpen(!isOpen)} href="#About">About</NavLink>
+          <NavLink onClick={() => setIsOpen(!isOpen)} href="#Skills">Skills</NavLink>
+          <NavLink onClick={() => setIsOpen(!isOpen)} href="#Experience">Experience</NavLink>
+          <NavLink onClick={() => setIsOpen(!isOpen)} href="#Projects">Projects</NavLink>
+          <NavLink onClick={() => setIsOpen(!isOpen)} href="#Education">Education</NavLink>
           <GithubButton href={Bio.github} target='_blank' style={{
             background: theme.primary,
             color: theme.text_primary,
@@ -160,8 +160,8 @@ const Navbar = () => {
           <GithubButton href={Bio.github} target='_blank'>Github Profile</GithubButton>
         </ButtonContainer>
 
-       </NavbarContainer>
-    </Nav> 
+      </NavbarContainer>
+    </Nav>
   )
 }
 

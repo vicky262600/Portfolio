@@ -25,22 +25,22 @@ const Wrapper = styled.div`
         flex-direction: column;
     }
 `
-const Title  = styled.div`
+const Title = styled.div`
     font-size: 52px;
     text-align: center;
     font-weight: 600;
     margin-top: 20px;
-    color: ${({theme}) => theme.text_primary};
+    color: ${({ theme }) => theme.text_primary};
     @media(max-width: 768px){
         margin-top: 12px;
         font-size: 32px;
     }
 `
-const Desc  = styled.div`
+const Desc = styled.div`
     font-size: 18px;
     align-items: center;
     font-weight: 600;
-    color: ${({theme}) => theme.text_secondary};
+    color: ${({ theme }) => theme.text_secondary};
     @media(max-width: 768px){
         font-size: 16px;
     }
@@ -69,15 +69,15 @@ const ToggleButton = styled.div`
     border-radius: 4px;
   }
   ${({ active, theme }) =>
-    active &&
-    `
+        active &&
+        `
   background:  ${theme.primary + 20};
   `}
 `;
 
 const Divider = styled.div`
     width: 1.5px;
-    backgound: ${({theme})=> theme.primary}
+    backgound: ${({ theme }) => theme.primary}
 `
 const CardContainer = styled.div`
     display: flex;
@@ -88,35 +88,40 @@ const CardContainer = styled.div`
 `
 
 const Projects = () => {
-    const[toggle, setToggle] = useState("all");
-  return (
+    const [toggle, setToggle] = useState("all");
+    return (
         <Container id='Projects'>
             <Wrapper>
                 <Title>Projects</Title>
-                <Desc style={{marginBottom: "40px",
+                <Desc style={{
+                    marginBottom: "40px",
                     paddingLeft: "18px",
                     paddingRight: "18px",
                 }}>I have worked on web applications and data analysis. Explore on your PC for the full experience— mobile responsiveness is just not my favorite part!</Desc>
 
                 <ToggleButtonGroup>
-                    <ToggleButton active={toggle==="all"}
-                        onClick={()=> setToggle("all")}
+                    <ToggleButton active={toggle === "all"}
+                        onClick={() => setToggle("all")}
                     >ALL</ToggleButton>
-                    <Divider/>
-                    <ToggleButton active={toggle==="web app"}
-                        onClick={()=> setToggle("web app")}
+                    <Divider />
+                    <ToggleButton active={toggle === "web app"}
+                        onClick={() => setToggle("web app")}
                     >Web App</ToggleButton>
-                    <Divider/>                    
-                    <ToggleButton active={toggle==="data analysis"}
-                        onClick={()=> setToggle("data analysis")}
+                    <Divider />
+                    <ToggleButton active={toggle === "Decentralized app"}
+                        onClick={() => setToggle("web app")}
+                    >Decentralized app</ToggleButton>
+                    <Divider />
+                    <ToggleButton active={toggle === "data analysis"}
+                        onClick={() => setToggle("data analysis")}
                     >data analysis</ToggleButton>
-                </ToggleButtonGroup> 
+                </ToggleButtonGroup>
                 <CardContainer>
-                    {toggle === "all" && projects.map((project)=>(
-                        <ProjectCard project={project}/>
+                    {toggle === "all" && projects.map((project) => (
+                        <ProjectCard project={project} />
                     ))}
-                    {projects.filter((item)=> item.category === toggle).map((project)=>(
-                        <ProjectCard project={project}/>
+                    {projects.filter((item) => item.category === toggle).map((project) => (
+                        <ProjectCard project={project} />
                     ))}
                 </CardContainer>
             </Wrapper>

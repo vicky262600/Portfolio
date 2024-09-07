@@ -1,7 +1,7 @@
 export const Bio = {
   name: "Vikas Joshi",
   roles: [
-    "Full Stack Developer",
+    "Full Stack Software and Blockchain Developer",
     "UI/UX Designer",
     "Programmer",
   ],
@@ -9,7 +9,7 @@ export const Bio = {
     "I am a motivated and adaptable individual, always ready to embrace new challenges. With a passion for learning, I am committed to delivering top-quality results. My positive attitude and growth mindset equip me to make significant contributions and accomplish remarkable achievements.",
   github: "https://github.com/vicky262600",
   resume:
-    "https://drive.google.com/file/d/1iNb5quiztqm8YlEYJdfsFSFBl30KjKfD/view",
+    "https://drive.google.com/file/d/1M2dtUtBkG5otq-CrE-zJ0w8-_ozWBgP1/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/vikas2604/",
 };
 
@@ -302,6 +302,25 @@ export const projects = [
     github: "https://github.com/vicky262600/RIRA-Ecommerce-FE",
     githubBE: "https://github.com/vicky262600/RIRA-Ecommerce-API",
     webapp: "https://rira-ecommerce-fe.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Decentralized Voting DApp",
+    description:
+      "I developed a secure Ethereum voting app with MetaMask integration, enabling real-time voting and smart contract interactions using ethers.js. Through this project, I advanced my skills in blockchain development, Solidity, and Web3 integration, applying them in a fully functional DApp on the Base Sepolia Testnet.",
+    image:
+      "https://peach-advisory-zebra-318.mypinata.cloud/ipfs/QmbYdKeEckojk9whryWytr5TVCqyhcyonGnBe5dWGVjiRh",
+    tags: [
+      "Solidity",
+      "Ethers.js",
+      "Hardhat",
+      "Node Js",
+      "Base Sepolia Testnet",
+    ],
+    category: "Decentralized app",
+    github: "https://github.com/vicky262600/voting-FE-react",
+    githubBE: "https://github.com/vicky262600/voting-hardhat",
+    webapp: "https://voting-fe-react.vercel.app/",
   },
 ];
 
