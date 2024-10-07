@@ -322,6 +322,23 @@ export const projects = [
     githubBE: "https://github.com/vicky262600/voting-hardhat",
     webapp: "https://voting-fe-react.vercel.app/",
   },
+  {
+    id: 3,
+    title: "CLI Real-time Cryptocurrency Prices",
+    description:
+      "A Node.js CLI tool that displays real-time cryptocurrency prices! By using Commander to handle commands, Inquirer for interactive prompts, and Axios to fetch data from the CoinMarketCap API, this tool provides up-to-date information for anyone interested in tracking crypto trends.",
+    image:
+      "https://peach-advisory-zebra-318.mypinata.cloud/ipfs/QmRgoTQQKbtskn9wPMpnWAiaKmPpysAZDi8USZy671GmUa",
+    tags: [
+      "Node.js",
+      "Commander",
+      "Inquirer",
+      "Axios",
+      "CoinMarketCap API"
+    ],
+    category: "CLI",
+    github: "https://github.com/vicky262600/CLI-Cryptocurrency-Prices",
+  },
 ];
 
 export const TimeLineData = [

@@ -115,6 +115,9 @@ const Projects = () => {
                     <ToggleButton active={toggle === "data analysis"}
                         onClick={() => setToggle("data analysis")}
                     >data analysis</ToggleButton>
+                    <ToggleButton active={toggle === "CLI"}
+                        onClick={() => setToggle("CLI")}
+                    >CLI</ToggleButton>
                 </ToggleButtonGroup>
                 <CardContainer>
                     {toggle === "all" && projects.map((project) => (
