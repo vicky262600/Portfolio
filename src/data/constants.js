@@ -154,7 +154,7 @@ export const experiences = [
     img: "https://peach-advisory-zebra-318.mypinata.cloud/ipfs/QmTY5cC2wSv13CYEJc9K7RP6xmXizKWPxhS1XzCirNhKYv",
     role: "Full-Stack Software Developer",
     company: "Kash Info Solutions Pvt. Ltd. Surat, Gujarat",
-    date: "May 2022 - July 2023",
+    date: "May 2022 - January 2024",
     desc: "In my role, I contributed to front-end development using ReactJS, HTML, CSS, and JavaScript, while also expanding my expertise in API integration. This experience not only demonstrated my commitment to continuous learning but also significantly improved my skills in Express and Node.js, enhancing my overall versatility in web development.",
     skills: [
       "ReactJS",
@@ -181,6 +181,7 @@ export const experiences = [
       "CSS",
       "JavaScript",
       "VueJs",
+      "Django",
       "Figma",
       "Axios",
     ],
