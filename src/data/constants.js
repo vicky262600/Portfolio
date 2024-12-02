@@ -152,7 +152,7 @@ export const experiences = [
   {
     id: 0,
     img: "https://peach-advisory-zebra-318.mypinata.cloud/ipfs/QmTY5cC2wSv13CYEJc9K7RP6xmXizKWPxhS1XzCirNhKYv",
-    role: "Full-Stack Software Developer",
+    role: "Junior Software Developer",
     company: "Kash Info Solutions Pvt. Ltd. Surat, Gujarat",
     date: "May 2022 - January 2024",
     desc: "In my role, I contributed to front-end development using ReactJS, HTML, CSS, and JavaScript, while also expanding my expertise in API integration. This experience not only demonstrated my commitment to continuous learning but also significantly improved my skills in Express and Node.js, enhancing my overall versatility in web development.",
@@ -172,7 +172,7 @@ export const experiences = [
   {
     id: 1,
     img: "https://peach-advisory-zebra-318.mypinata.cloud/ipfs/Qmc4kycNTbAveUsTwt22zS8fYSA1YLF27g3v4z7tGCzjgz",
-    role: "Front-end Intern",
+    role: "Software Developer",
     company: "Core Medical Instruments Pvt. Ltd.",
     date: "January 2022 – April 20",
     desc: "As the lead on front-end architecture utilizing Vue.js, HTML, and CSS, I effectively managed team collaboration, ensuring smooth integration of the web app with Axios. This role not only enhanced my technical skills but also honed my interpersonal and conflict-resolution abilities within a dynamic team environment",
