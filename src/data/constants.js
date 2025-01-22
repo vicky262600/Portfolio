@@ -1,3 +1,4 @@
+import dpharmaImage from './dpharma.png';
 export const Bio = {
   name: "Vikas Joshi",
   roles: [
@@ -11,6 +12,7 @@ export const Bio = {
   resume:
     "https://drive.google.com/file/d/1M2dtUtBkG5otq-CrE-zJ0w8-_ozWBgP1/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/vikas2604/",
+  twitter: "https://x.com/VikasJoshi26824",
 };
 
 export const skills = [
@@ -154,8 +156,8 @@ export const experiences = [
     img: "https://peach-advisory-zebra-318.mypinata.cloud/ipfs/QmTY5cC2wSv13CYEJc9K7RP6xmXizKWPxhS1XzCirNhKYv",
     role: "Junior Software Developer",
     company: "Kash Info Solutions Pvt. Ltd. Surat, Gujarat",
-    date: "May 2022 - January 2024",
-    desc: "In my role, I contributed to front-end development using ReactJS, HTML, CSS, and JavaScript, while also expanding my expertise in API integration. This experience not only demonstrated my commitment to continuous learning but also significantly improved my skills in Express and Node.js, enhancing my overall versatility in web development.",
+    date: "May 2022 - August 2023",
+    desc: "Leveraging expertise in the MERN stack, I have successfully developed and deployed high-performing web applications with load times under 2 seconds. My work includes engineering secure and scalable RESTful APIs using Node.js and Express.js, optimizing MongoDB queries to enhance integration efficiency by 25%. By utilizing Docker for containerization, I streamlined deployment pipelines, ensuring consistency across environments. Collaborating in agile teams, I actively contributed to sprint planning, code reviews, and peer mentoring while maintaining a 95% defect-free production code rate. Through advanced caching strategies and optimized database indexing, I improved application performance, supported by detailed technical documentation for seamless knowledge sharing and onboarding.",
     skills: [
       "ReactJS",
       "Redux",
@@ -174,8 +176,8 @@ export const experiences = [
     img: "https://peach-advisory-zebra-318.mypinata.cloud/ipfs/Qmc4kycNTbAveUsTwt22zS8fYSA1YLF27g3v4z7tGCzjgz",
     role: "Software Developer",
     company: "Core Medical Instruments Pvt. Ltd.",
-    date: "January 2022 – April 20",
-    desc: "As the lead on front-end architecture utilizing Vue.js, HTML, and CSS, I effectively managed team collaboration, ensuring smooth integration of the web app with Axios. This role not only enhanced my technical skills but also honed my interpersonal and conflict-resolution abilities within a dynamic team environment",
+    date: "January 2022 – April 2022",
+    desc: "I spearheaded the design and implementation of an intuitive front-end architecture using Vue.js, HTML, and CSS, enhancing user experience and boosting engagement by 30%. By seamlessly integrating APIs with Django, I ensured efficient data management and demonstrated full-stack development expertise. Optimizing the application for scalability and responsiveness improved its performance and maintained reliability for over 5,000 monthly users. Through extensive testing and debugging, I guaranteed cross-browser compatibility and minimized downtime. Collaborating with a multidisciplinary team, I successfully delivered the project on schedule while meeting client expectations.",
     skills: [
       "HTML",
       "CSS",
@@ -306,7 +308,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Decentralized Voting DApp",
+    title: "RIRA D-Voting",
     description:
       "I developed a secure Ethereum voting app with MetaMask integration, enabling real-time voting and smart contract interactions using ethers.js. Through this project, I advanced my skills in blockchain development, Solidity, and Web3 integration, applying them in a fully functional DApp on the Base Sepolia Testnet.",
     image:
@@ -324,7 +326,26 @@ export const projects = [
     webapp: "https://voting-fe-react.vercel.app/",
   },
   {
-    id: 3,
+    id: 11,
+    title: "RIRA D-pharma",
+    description:
+      "I developed a decentralized prescription management system using React, Hardhat, Privy, and deployed it on the Base Sepolia Testnet. This project enhances healthcare transparency and efficiency by enabling secure, tamper-proof interactions between doctors, patients, and pharmacies. It features a user-friendly interface and robust privacy measures, ensuring seamless and trustworthy prescription management through blockchain technology.",
+    image: dpharmaImage,
+    tags: [
+      "Solidity",
+      "Privy",
+      "Ethers.js",
+      "Hardhat",
+      "Node Js",
+      "Base Sepolia Testnet",
+    ],
+    category: "Decentralized app",
+    github: "https://github.com/vicky262600/d-pharma-flow-fe",
+    githubBE: "https://github.com/vicky262600/d-pharma-hardhat",
+    webapp: "https://d-pharma.vercel.app/",
+  },
+  {
+    id: 4,
     title: "CLI Real-time Cryptocurrency Prices",
     description:
       "A Node.js CLI tool that displays real-time cryptocurrency prices! By using Commander to handle commands, Inquirer for interactive prompts, and Axios to fetch data from the CoinMarketCap API, this tool provides up-to-date information for anyone interested in tracking crypto trends.",

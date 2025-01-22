@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
+import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import {
   LinkedIn,
@@ -96,6 +97,9 @@ const Footer = () => {
           </SocialMediaIcon>
           <SocialMediaIcon href={Bio.github} target="display">
             <GitHubIcon />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.twitter} target="display">
+            <XIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>&copy; 2024 Vikas Joshi. All rights reserved.</Copyright>

@@ -8,6 +8,7 @@ import { motion } from 'framer-motion'
 import { headContainerAnimation } from '../../utils/motion'
 import { headTextAnimation } from '../../utils/motion'
 import StarCanvas from "../canvas/Stars";
+import profile from "../../data/IMG_0269.jpeg"
 
 const HeroContainer = styled.div`
  display: flex;
@@ -251,7 +252,7 @@ const hero = () => {
             <HeroRightContainer>
               <Tilt>
                 <ProfilePictureContianer>
-                  <ProfilePicture src={"https://peach-advisory-zebra-318.mypinata.cloud/ipfs/Qmey2d3zy3yZ7cySkP81sN3h1H8sjzK6Ri7PNFvMyuvmgD"} alt="Vikas Joshi" />
+                  <ProfilePicture src={profile} alt="Vikas Joshi" />
                 </ProfilePictureContianer>
               </Tilt>
             </HeroRightContainer>
