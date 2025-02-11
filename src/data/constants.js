@@ -307,6 +307,24 @@ export const projects = [
     webapp: "https://rira-ecommerce-fe.vercel.app/",
   },
   {
+    id: 15,
+    title: "Blog Platform",
+    description:
+      "Developed a full-stack blog platform using Next.js, MongoDB, and Firebase, allowing users to register/login via Google authentication or custom credentials with NextAuth. Users can create, update, and delete blog posts with images stored in Firebase and URLs saved in MongoDB. Implemented secure authentication, efficient data fetching with SWR, and a seamless user experience.",
+    image:
+      "https://private-user-images.githubusercontent.com/145147066/412031208-db2dd9c8-867c-44b4-b5e0-d64d902f39f8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzkyODY3NDEsIm5iZiI6MTczOTI4NjQ0MSwicGF0aCI6Ii8xNDUxNDcwNjYvNDEyMDMxMjA4LWRiMmRkOWM4LTg2N2MtNDRiNC1iNWUwLWQ2NGQ5MDJmMzlmOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjExJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxMVQxNTA3MjFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNjNhNDExZDc5MDBiMDVhZjg2N2Y5M2M0NjNkNDFhMjVkZDVlNjRmMzRjMDA0YWYwNDJjZjUzMmE2MGM0ODZkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.35Jw7c2f5SeqEAQ2BObnToPhw_FWD6BKG-aZUoVGnvg",
+    tags: [
+      "Next.js",
+      "MongoDb",
+      "Node Js",
+      "NextAuth",
+      "Firebase",
+    ],
+    category: "web app",
+    github: "https://github.com/vicky262600/first-nextJs-project",
+    webapp: "https://rira-blogs.vercel.app/",
+  },
+  {
     id: 3,
     title: "RIRA D-Voting",
     description:
