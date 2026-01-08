@@ -153,10 +153,31 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: "https://peach-advisory-zebra-318.mypinata.cloud/ipfs/QmTY5cYv",
+    role: "JavaScript Developer",
+    company: "EHR LOGIC",
+    date: "January 2024 – Present",
+    desc: "Worked as a JavaScript Developer at EHR LOGIC, contributing to the development and maintenance of scalable web applications. Collaborated closely with cross-functional teams to design, implement, and optimize features using clean and efficient JavaScript code. Focused on improving application performance, fixing bugs, and ensuring reliable, high-quality software delivery in a remote work environment.",
+    skills: [
+      "NextJS",
+      "ReactJS",
+      "Redux",
+      "Express",
+      "NodeJs",
+      "MongoDB",
+      "Material UI",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    // doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
+  },
+  {
+    id: 1,
     img: "https://peach-advisory-zebra-318.mypinata.cloud/ipfs/QmTY5cC2wSv13CYEJc9K7RP6xmXizKWPxhS1XzCirNhKYv",
     role: "Junior Software Developer",
     company: "Kash Info Solutions Pvt. Ltd. Surat, Gujarat",
-    date: "May 2022 - August 2023",
+    date: "May 2022 - January 2024",
     desc: "Leveraging expertise in the MERN stack, I have successfully developed and deployed high-performing web applications with load times under 2 seconds. My work includes engineering secure and scalable RESTful APIs using Node.js and Express.js, optimizing MongoDB queries to enhance integration efficiency by 25%. By utilizing Docker for containerization, I streamlined deployment pipelines, ensuring consistency across environments. Collaborating in agile teams, I actively contributed to sprint planning, code reviews, and peer mentoring while maintaining a 95% defect-free production code rate. Through advanced caching strategies and optimized database indexing, I improved application performance, supported by detailed technical documentation for seamless knowledge sharing and onboarding.",
     skills: [
       "ReactJS",
@@ -172,7 +193,7 @@ export const experiences = [
     doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
   },
   {
-    id: 1,
+    id: 2,
     img: "https://peach-advisory-zebra-318.mypinata.cloud/ipfs/Qmc4kycNTbAveUsTwt22zS8fYSA1YLF27g3v4z7tGCzjgz",
     role: "Software Developer",
     company: "Core Medical Instruments Pvt. Ltd.",
@@ -190,7 +211,7 @@ export const experiences = [
     doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1696514649120.jpeg?alt=media&token=e7f6757b-edfa-4138-a692-d6709eeef3e2",
   },  
   {
-    id: 5,
+    id: 3,
     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
     role: "Open Source Contributor ",
     company: "GirlScript Summer of Code",
@@ -362,6 +383,28 @@ export const projects = [
     githubBE: "https://github.com/vicky262600/d-pharma-hardhat",
     webapp: "https://d-pharma.vercel.app/",
   },
+  {
+    id: 17,
+    title: "Embrosoul – Full-Stack E-commerce Platform",
+    description:
+      "Designed, developed, and deployed a production-ready e-commerce platform used by real customers. Built an SEO-friendly, server-rendered frontend with Next.js and implemented secure REST APIs using Node.js and Express. Integrated JWT-based authentication, Stripe payments, Firebase Storage for image uploads, and deployed the application on Vercel with a custom domain via GoDaddy. This project provided hands-on experience with real payment flows, production deployments, performance optimization, and SEO best practices.",
+    image: embrosoulImage,
+    tags: [
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Stripe",
+      "Firebase Storage",
+      "Vercel",
+      "GoDaddy"
+    ],
+    category: "web app",
+    github: "https://github.com/vicky262600/Nirvana",
+    webapp: "https://www.embrosoul.com",
+  }
+  
   {
     id: 4,
     title: "CLI Real-time Cryptocurrency Prices",
