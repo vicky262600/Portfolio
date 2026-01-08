@@ -10,7 +10,7 @@ export const Bio = {
     "I am a motivated and adaptable individual, always ready to embrace new challenges. With a passion for learning, I am committed to delivering top-quality results. My positive attitude and growth mindset equip me to make significant contributions and accomplish remarkable achievements.",
   github: "https://github.com/vicky262600",
   resume:
-    "https://drive.google.com/file/d/1gJoj3vhkBxp8THae0rZcoRPLlecK8ZFv/view?usp=drive_link",
+    "https://drive.google.com/file/d/1M2dtUtBkG5otq-CrE-zJ0w8-_ozWBgP1/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/vikas2604/",
   twitter: "https://x.com/VikasJoshi26824",
 };
