@@ -403,7 +403,7 @@ export const projects = [
     category: "web app",
     github: "https://github.com/vicky262600/Nirvana",
     webapp: "https://www.embrosoul.com",
-  }
+  },
   
   {
     id: 4,
