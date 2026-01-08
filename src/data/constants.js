@@ -388,7 +388,7 @@ export const projects = [
     title: "Embrosoul – Full-Stack E-commerce Platform",
     description:
       "Designed, developed, and deployed a production-ready e-commerce platform used by real customers. Built an SEO-friendly, server-rendered frontend with Next.js and implemented secure REST APIs using Node.js and Express. Integrated JWT-based authentication, Stripe payments, Firebase Storage for image uploads, and deployed the application on Vercel with a custom domain via GoDaddy. This project provided hands-on experience with real payment flows, production deployments, performance optimization, and SEO best practices.",
-    image: embrosoulImage,
+    image: "",
     tags: [
       "Next.js",
       "Node.js",
